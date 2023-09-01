@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <time.h>
 int randchar();
-int main();
+
 
 int randchar(){
 
@@ -18,9 +18,5 @@ int randchar(){
     }
 
     return 0;
-}
-int main(){
-    randchar();
-    return 1;
 }
 
