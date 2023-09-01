@@ -2,21 +2,19 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-int randchar();
+char randchar();
 
 
-int randchar(){
+
+char randchar(){
 
     srand ( time(NULL) );
+    char rletter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[rand() % 26];
 
 
-    int i;
 
-    for (i = 0;i<7;i++) {
-        char rletter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" [rand() % 26];
-        printf("%c", rletter);
-    }
 
-    return 0;
+    return rletter;
 }
+
 
